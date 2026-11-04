@@ -1,0 +1,9 @@
+$kind: http-request
+name: http://localhost:3001/books
+description: ""
+url: http://localhost:3001/books?limit=5&offset=5
+method: GET
+queryParams:
+  limit: "5"
+  offset: "5"
+order: 1000
