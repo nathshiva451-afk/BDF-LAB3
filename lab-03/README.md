@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a RESTful API using Node.js, Express.js, and SQLite3. It extends basic CRUD operations by introducing advanced database features such as searching, sorting, pagination, price filtering, input validation, and error handling.
+This project implements a RESTful API using **Node.js, Express.js, and SQLite3**. It extends basic CRUD operations by introducing advanced database features such as searching, sorting, pagination, price filtering, input validation, and error handling.
 
 The application manages book records stored in an SQLite database and provides API endpoints to perform different operations.
 
@@ -15,41 +15,45 @@ The application manages book records stored in an SQLite database and provides A
 - Postman
 - Nodemon
 - Git and GitHub
+- Render (Deployment)
 
 ## Project Structure
 
 ```text
-lab-03/
+BDF-LAB3/
 │
-├── database/
-│   └── db.js
+├── lab-02/
 │
-├── routes/
-│   └── books.js
-│
-├── screenshots/
-│   ├── 1-getall.png
-│   ├── 2-searchbooks.png
-│   ├── 3-sortasc.png
-│   ├── 4-sortdesc.png
-│   ├── 5-paginationfirst.png
-│   ├── 6-paginationlast.png
-│   ├── 7-pricefilter.png
-│   ├── 8-combined_parameters.png
-│   ├── 9-post.png
-│   ├── 10-postmissing.png
-│   ├── 11-post_missing_author.png
-│   ├── 12-post_invalid_price.png
-│   ├── 13-put_update.png
-│   ├── 14-delete.png
-│   ├── 15-not_found.png
-│   └── 16-invalid_query.png
-│
-├── server.js
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+└── lab-03/
+    ├── database/
+    │   └── db.js
+    │
+    ├── routes/
+    │   └── books.js
+    │
+    ├── screenshots/
+    │   ├── 1-getall.png
+    │   ├── 2-searchbooks.png
+    │   ├── 3-sortasc.png
+    │   ├── 4-sortdesc.png
+    │   ├── 5-paginationfirst.png
+    │   ├── 6-paginationlast.png
+    │   ├── 7-pricefilter.png
+    │   ├── 8-combined_parameters.png
+    │   ├── 9-post.png
+    │   ├── 10-postmissing.png
+    │   ├── 11-post_missing_author.png
+    │   ├── 12-post_invalid_price.png
+    │   ├── 13-put_update.png
+    │   ├── 14-delete.png
+    │   ├── 15-not_found.png
+    │   └── 16-invalid_query.png
+    │
+    ├── server.js
+    ├── package.json
+    ├── package-lock.json
+    ├── .gitignore
+    └── README.md
 ```
 
 ## Features
@@ -58,7 +62,7 @@ lab-03/
 
 - Connects to an SQLite database.
 - Creates the books table automatically.
-- Inserts 10 sample books when the table is empty.
+- Inserts 10 sample books when the database is empty.
 
 ### 2. CRUD Operations
 
@@ -156,9 +160,16 @@ GET /books?search_q=Java&order_by=price&order=ASC&limit=5&offset=0&min_price=300
 
 ## API Endpoints
 
-Base URL:
-
+**Local Base URL:**
 `http://localhost:3001`
+
+**Live Base URL:**
+`https://bdf-lab3.onrender.com`
+
+
+**GIT HUB URL**
+https://github.com/nathshiva451-afk/BDF-LAB3/tree/main/lab-03
+
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
@@ -195,7 +206,7 @@ npm install
 npm run dev
 ```
 
-The server will start at:
+The local server will start at:
 
 `http://localhost:3001`
 
@@ -285,11 +296,26 @@ All 16 screenshots are stored in the `screenshots/` directory and document the A
 
 ## GitHub Repository
 
-[View Lab 3 GitHub Repository](https://github.com/nathshiva451-afk/BDF-LAB3)
+**Lab 3 Source Code:**
 
-## Deployment
+[View Lab 3 on GitHub](https://github.com/nathshiva451-afk/BDF-LAB3/tree/main/lab-03)
 
-**Live Deployment URL:** To be added after deployment.
+**Main Repository:**
+
+[View BDF-LAB3 Repository](https://github.com/nathshiva451-afk/BDF-LAB3)
+
+## Live Deployment
+
+**Deployment Platform:** Render
+
+**Live API URL:**
+
+[https://bdf-lab3.onrender.com](https://bdf-lab3.onrender.com)
+
+### Test Live API
+
+- [API Welcome Page](https://bdf-lab3.onrender.com/)
+- [Retrieve All Books](https://bdf-lab3.onrender.com/books)
 
 ## Learning Outcomes
 
@@ -302,6 +328,7 @@ All 16 screenshots are stored in the `screenshots/` directory and document the A
 - Handling errors and HTTP status codes.
 - Testing REST APIs using Postman.
 - Managing projects using Git and GitHub.
+- Deploying backend applications using Render.
 
 ---
 

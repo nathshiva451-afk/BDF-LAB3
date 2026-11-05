@@ -15,30 +15,34 @@ The API allows users to create, retrieve, update, and delete book records stored
 - Postman
 - Nodemon
 - Git and GitHub
+- Render (Deployment)
 
 ## Project Structure
 
 ```text
-lab-02/
+BDF-LAB3/
 │
-├── database/
-│   └── db.js
+├── lab-02/
+│   ├── database/
+│   │   └── db.js
+│   │
+│   ├── routes/
+│   │   └── books.js
+│   │
+│   ├── screenshot/
+│   │   ├── getall.png
+│   │   ├── getone.png
+│   │   ├── post.png
+│   │   ├── put.png
+│   │   └── delete.png
+│   │
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── .gitignore
+│   └── README.md
 │
-├── routes/
-│   └── books.js
-│
-├── screenshot/
-│   ├── getall.png
-│   ├── getone.png
-│   ├── post.png
-│   ├── put.png
-│   └── delete.png
-│
-├── server.js
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+└── lab-03/
 ```
 
 ## Features
@@ -71,9 +75,17 @@ lab-02/
 
 ## API Endpoints
 
-Base URL:
+**Local Base URL:**
 
 `http://localhost:3000`
+
+**Live Base URL:**
+
+`https://bdf-lab2-zloa.onrender.com`
+
+**GIT HUB URL**  
+https://github.com/nathshiva451-afk/BDF-LAB3/tree/main/lab-02
+
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -109,7 +121,7 @@ npm install
 npm run dev
 ```
 
-The server will start at:
+The local server will start at:
 
 `http://localhost:3000`
 
@@ -155,13 +167,23 @@ All five screenshots are stored in the `screenshot/` directory and document the 
 
 ## GitHub Repository
 
-[View Lab 2 and Lab 3 GitHub Repository](https://github.com/nathshiva451-afk/BDF-LAB3)
+**Lab 2 Source Code:**
 
-The Lab 2 project is available inside the `lab-02/` directory.
+[View Lab 2 on GitHub](https://github.com/nathshiva451-afk/BDF-LAB3/tree/main/lab-02)
 
-## Deployment
 
-**Live Deployment URL:** To be added after deployment.
+## Live Deployment
+
+**Deployment Platform:** Render
+
+**Live API URL:**
+
+[https://bdf-lab2-zloa.onrender.com/](https://bdf-lab2-zloa.onrender.com/)
+
+### Test Live API
+
+- [API Welcome Page](https://bdf-lab2-zloa.onrender.com/)
+- [Retrieve All Books](https://bdf-lab2-zloa.onrender.com/books)
 
 ## Learning Outcomes
 
@@ -173,6 +195,7 @@ The Lab 2 project is available inside the `lab-02/` directory.
 - Testing APIs using Postman.
 - Handling HTTP status codes and errors.
 - Managing project files using Git and GitHub.
+- Deploying backend applications using Render.
 
 ---
 
