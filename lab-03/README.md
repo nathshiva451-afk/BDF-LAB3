@@ -177,10 +177,10 @@ Base URL:
 git clone https://github.com/nathshiva451-afk/BDF-LAB3.git
 ```
 
-### 2. Navigate to the Project Folder
+### 2. Navigate to the Lab 3 Folder
 
 ```bash
-cd BDF-LAB3
+cd BDF-LAB3/lab-03
 ```
 
 ### 3. Install Dependencies
@@ -215,30 +215,73 @@ npm run dev
 
 ## Testing
 
-The API was tested using Postman.
+The REST API was tested using Postman. The following screenshots demonstrate the successful API operations and validation tests.
 
-The following test cases were performed:
+### 1. Retrieve All Books
 
-| No. | Test Case | Screenshot |
-|---|---|---|
-| 1 | Retrieve all books | 1-getall.png |
-| 2 | Search books | 2-searchbooks.png |
-| 3 | Sort books in ascending order | 3-sortasc.png |
-| 4 | Sort books in descending order | 4-sortdesc.png |
-| 5 | First-page pagination | 5-paginationfirst.png |
-| 6 | Next-page pagination | 6-paginationlast.png |
-| 7 | Price filtering | 7-pricefilter.png |
-| 8 | Combined query parameters | 8-combined_parameters.png |
-| 9 | Add a new book | 9-post.png |
-| 10 | Validate missing title | 10-postmissing.png |
-| 11 | Validate missing author | 11-post_missing_author.png |
-| 12 | Validate invalid price | 12-post_invalid_price.png |
-| 13 | Update a book | 13-put_update.png |
-| 14 | Delete a book | 14-delete.png |
-| 15 | Handle book not found | 15-not_found.png |
-| 16 | Handle invalid query parameters | 16-invalid_query.png |
+![Get All Books](screenshots/1-getall.png)
 
-All screenshots are available in the `screenshots` directory.
+### 2. Search Books
+
+![Search Books](screenshots/2-searchbooks.png)
+
+### 3. Sort Books in Ascending Order
+
+![Sort Ascending](screenshots/3-sortasc.png)
+
+### 4. Sort Books in Descending Order
+
+![Sort Descending](screenshots/4-sortdesc.png)
+
+### 5. First Page Pagination
+
+![First Page Pagination](screenshots/5-paginationfirst.png)
+
+### 6. Next Page Pagination
+
+![Next Page Pagination](screenshots/6-paginationlast.png)
+
+### 7. Price Filtering
+
+![Price Filtering](screenshots/7-pricefilter.png)
+
+### 8. Combined Query Parameters
+
+![Combined Parameters](screenshots/8-combined_parameters.png)
+
+### 9. Add a New Book
+
+![Post Book](screenshots/9-post.png)
+
+### 10. Validate Missing Title
+
+![Missing Title](screenshots/10-postmissing.png)
+
+### 11. Validate Missing Author
+
+![Missing Author](screenshots/11-post_missing_author.png)
+
+### 12. Validate Invalid Price
+
+![Invalid Price](screenshots/12-post_invalid_price.png)
+
+### 13. Update a Book
+
+![Update Book](screenshots/13-put_update.png)
+
+### 14. Delete a Book
+
+![Delete Book](screenshots/14-delete.png)
+
+### 15. Handle Book Not Found
+
+![Book Not Found](screenshots/15-not_found.png)
+
+### 16. Invalid Query Parameters
+
+![Invalid Query](screenshots/16-invalid_query.png)
+
+All 16 screenshots are stored in the `screenshots/` directory and document the API testing process.
 
 ## GitHub Repository
 
@@ -258,8 +301,10 @@ All screenshots are available in the `screenshots` directory.
 - Validating API request parameters.
 - Handling errors and HTTP status codes.
 - Testing REST APIs using Postman.
+- Managing projects using Git and GitHub.
 
 ---
 
-**Subject:** Backend Development Fundamentals  
+**Subject:** Backend Development Fundamentals
+
 **Lab:** 3 – SQLite Database and Advanced CRUD Operations
